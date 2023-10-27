@@ -1,4 +1,3 @@
-# Plotly_Calendar_Heatmap
 ## 일별 빈도 시각화 Calendar Heatmap
 ---
 `Pandas`와  `Plotly`를 사용하여 간편한 Calendar Heatmap 제작을 지원합니다.
