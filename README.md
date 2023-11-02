@@ -116,12 +116,13 @@ calendar.make_trace(year=2022)
 
 
 ## 버전
-- 1.0.0-alpha `2023-10-27` ~ `2023-11-02`
+- 1.0.0-alpha `2023-10-27`
 	- 개별적 기능 구현
-	- 패키징
-- 1.0.0-beta `2023-11-02`
-- 1.0.1-beta `2023-11-02`
-	- Modify instance variables
+	- Packaging
+- 1.0.0-beta `2023-11-02`
+- 1.0.1-beta `2023-11-02`  
+    - Modify instance variables
 
-- 1.0.0-release `20yy-mm-dd`
+- 1.1.0-beta `20yy-mm--dd`
+	- Support visualization for all years.
 
