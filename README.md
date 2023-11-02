@@ -54,7 +54,7 @@ print(calendar.years)
 calendar.make_trace(year=2022)
 ```
 
-![[newplot (22).png]]
+![img](README_IMG/figure_1.png)
 
 
 
@@ -78,7 +78,7 @@ event_df = df.loc[df.event.notna(), ['date', 'event']]
 display(event_df)
 ```
 
-![[Pasted image 20231102153609.png]]
+![img](README_IMG/figure_3.png)
 
 
 
@@ -87,7 +87,7 @@ calendar.on_event(event_df, date_col='date', event_col='event')
 calendar.make_trace(year=2022)
 ```
 
-![[newplot (23).png]]
+![img](README_IMG/figure_2.png)
 
 
 ## 목차
