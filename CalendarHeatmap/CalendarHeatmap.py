@@ -268,7 +268,7 @@ class CalendarHeatmap:
         
         # data processing
         event_data = event_data.copy()
-        filter = self.data['date'].isin(event_data['date'])
+        filter = self.data[self.date_col].isin(event_data[date_col])
         self.data.loc[filter, 'event'] = 1
         
         # set color
