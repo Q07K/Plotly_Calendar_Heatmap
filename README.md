@@ -30,41 +30,40 @@ print(calendar.data['date'].dtype)
 object
 datetime64[ns]
 ```
-
+<br>
 -  시각화 가능한 년도 확인 및 Calendar Heatmap 출력
 ```python
 # 시각화 가능한 년도 확인
 print(calendar.years)
 ```
-
+<br>
 ```
 [2022 2023]
 ```
-
+<br>
 ```python
 # correct
 calendar.make_trace(year=2022)
 ```
 ![[newplot (22).png]]
-
+<br>
 ```python
 #wrong
 calendar.make_trace(year=2024)
 ```
-
+<br>
 ```
 ValueError: "2024" not in list: [2022 2023]
 ```
-
+<br>
 - event 적용
 ```python
 # event setting
 event_df = df.loc[df.event.notna(), ['date', 'event']]
 display(event_df)
-
 ```
 ![[Pasted image 20231102153609.png]]
-
+<br>
 ```python
 calendar.on_event(event_df, date_col='date', event_col='event')
 calendar.make_trace(year=2022)
