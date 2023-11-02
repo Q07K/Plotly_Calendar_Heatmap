@@ -273,7 +273,7 @@ class CalendarHeatmap:
         
         # set color
         if color is None:
-            color = '#76cf63'
+            color = '#76cf61'
             
         # Event Heatmap Setting
         event_kws = dict(

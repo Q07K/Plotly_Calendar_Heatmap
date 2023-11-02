@@ -1,1 +1,1 @@
-from .CalendarHeatmap import *
+from .CalendarHeatmap import CalendarHeatmap
