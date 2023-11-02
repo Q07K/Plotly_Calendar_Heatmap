@@ -25,7 +25,7 @@ calendar = CalendarHeatmap(
 )
 print(calendar.data['date'].dtype)
 ```
-
+<br>
 ```
 object
 datetime64[ns]
