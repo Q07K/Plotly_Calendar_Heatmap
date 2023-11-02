@@ -25,12 +25,16 @@ calendar = CalendarHeatmap(
 )
 print(calendar.data['date'].dtype)
 ```
-<br>
+
+
+
 ```
 object
 datetime64[ns]
 ```
-<br>
+
+
+
 -  시각화 가능한 년도 확인 및 Calendar Heatmap 출력
 ```python
 # 시각화 가능한 년도 확인
