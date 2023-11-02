@@ -8,7 +8,7 @@ pip install -U git+https://github.com/Q07K/Plotly_Calendar_Heatmap
 
 __2.  사용방법__
 - import 및 초기 설정(date column은 datetime64로 자동 변환됩니다. )
-  ```python
+```python
 import pandas as pd
 from CalendarHeatmap import CalendarHeatmap
 
@@ -24,7 +24,7 @@ calendar = CalendarHeatmap(
 	language=True  # True: Kor
 )
 print(calendar.data['date'].dtype)
-  ```
+```
 
 ```
 object
@@ -32,19 +32,19 @@ datetime64[ns]
 ```
 
 -  시각화 가능한 년도 확인 및 Calendar Heatmap 출력
-    ```python
+```python
 # 시각화 가능한 년도 확인
 print(calendar.years)
-  ```
+```
 
 ```
 [2022 2023]
 ```
 
-  ```python
+```python
 # correct
 calendar.make_trace(year=2022)
-  ```
+```
 ![[newplot (22).png]]
 
 ```python
@@ -57,18 +57,19 @@ ValueError: "2024" not in list: [2022 2023]
 ```
 
 - event 적용
-  ```python
+```python
 # event setting
 event_df = df.loc[df.event.notna(), ['date', 'event']]
 display(event_df)
 
-  ```
+```
 ![[Pasted image 20231102153609.png]]
 
 ```python
 calendar.on_event(event_df, date_col='date', event_col='event')
 calendar.make_trace(year=2022)
 ```
+
 ![[newplot (23).png]]
 
 
